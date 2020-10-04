@@ -1,0 +1,23 @@
+{
+  "name": "tech-friday-quality",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gianmoretti@github.com/gianmoretti/tech-friday-quality.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gianmoretti/tech-friday-quality/issues"
+  },
+  "homepage": "https://github.com/gianmoretti/tech-friday-quality#readme"
+}

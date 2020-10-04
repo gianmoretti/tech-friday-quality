@@ -1,0 +1,222 @@
+import { Box } from 'theme-ui'
+
+import { future, highlight } from '@mdx-deck/themes'
+
+export const theme = {
+  ...future,
+  ...highlight
+}
+
+# Quality in software development
+
+<Box color="yellow">by Gianluca Moretti @PatchAI</Box>
+
+---
+
+# General definition: what is 
+[from Wikipedia](https://en.wikipedia.org/wiki/Software_quality)
+
+<Horizontal>
+    <div><span style={{ fontWeight: 'bold'}}>Business and Product Owners</span>:<br/>Functional quality reflects how well it complies with or conforms to a given design, based on requirements or specifications</div>    
+    
+    <div><span style={{ fontWeight: 'bold'}}>Developers and Ops</span>:<br/>Structural quality refers to how it meets non-functional requirements that support the delivery of the functional requirements, such as robustness or maintainability​</div> 
+</Horizontal>
+
+---
+
+# Quality: why is important?
+
+<ul>
+    <li>As a basic value for PatchAI ➡️ culture of quality​</li>
+    <Steps>
+    <li>As the effect of a constant improvement philosophy​</li>
+    <li>As the way to drive the changes to the development process we will live in the next future</li>
+    <li>As a mean to avoid or reduce ​recurrent problems and critical bugs​</li>
+    </Steps>
+</ul>
+
+---
+
+Bad myths: *Productivity vs Quality*
+
+![arm wrestling](https://cdn3.whatculture.com/images/2019/06/b0f48f7a9d40f50a-600x338.jpg)
+
+---
+
+Where we are
+
+![map](https://image.freepik.com/free-vector/navigation-map-street-3d-location-pin-locator-pins-pointer-navigator-maps-locations-marker_102902-1053.jpg)
+
+---
+
+# Metrics: Management process
+<ul>
+    <li>lead time: from TODO to DONE</li>
+    <Steps>
+    <li>number of bugs ➡️ defect density ➡️ customer satisfaction</li>
+    <li>committment/actual completion ratio ➡️ team reliability</li>
+    <li>sprint burndown velocity ➡️ team internal organization</li>
+    <li>team velocity ➡️ team productivity</li>
+    </Steps>
+</ul>
+
+*Tools*: JIRA reports
+
+---
+
+# Metrics: Development process
+<ul>
+    <li>number of commits per day, team and/or developers</li>
+    <Steps>
+    <li>average commit size</li>
+    <li>average pull request size</li>
+    <li>average pull request duration</li>
+    </Steps>
+</ul>
+
+*Tools*: GitHub APIs
+
+---
+
+# Metrics: Coding
+[code quality metrics for Microsoft](https://docs.microsoft.com/it-it/visualstudio/code-quality/code-metrics-values)
+
+<ul>
+    <li>maintainability index</li>
+    <Steps>
+    <li>cyclomatic complexity</li>
+    <li>depth of Inheritance</li>
+    <li>class coupling</li>
+    <li>lines of code</li>
+    <li>test coperture</li>
+    <li>warning and style defects</li>
+    </Steps>
+</ul>
+
+*Tools*: IDEs and build plugins
+
+---
+
+# Actions: Management process
+
+<Horizontal>
+<div>
+    <span style={{ fontWeight: 'bold'}}>Pre-planning meetings</span>
+    <br/>
+    <Notes>
+    - whole team or team representative evaluate the story
+    - share responsibilities and decisions with Product team
+    - exhaustive acceptance criteria
+    </Notes>
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Agile alternatives</span>
+    <br/>
+    Scrum, Kanban<br/>
+    Feature Sprints (for limiting as much as possible context switching),
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Dedicated teams</span>
+    <br/>
+    Feature teams<br/>
+    QA team
+
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Brainstorming sessions</span>
+    <Notes>
+        - Found the most important emerged problems​
+        - Understand the main causes and reasons​
+        - Discuss in order to find the possible actions to take​
+        - Apply the actions​
+        - Periodical evaluation of the actions’ effects and eventually correct them or find new ones​
+    </Notes>
+    <br/>
+    Retrospectives<br/>
+    Post Mortem
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Delivery models</span><br/>
+    Continuous delivery vs Periodical Release<br/>
+    Rolling update<br/>Blue/Green Deployment<br/>Canary release<br/>
+    Feature toggles
+</div>
+</Horizontal>
+
+---
+
+## Actions: Development and Delivery process
+- Code reviews involving the other teams (cross-team style​)
+- New environment (e.g. exactly as the Production)
+- End Starting, Start Finishing approach
+- improve the documentation​
+- improve constantly the Agile methods comprehension and adoption​
+
+---
+
+![pair](https://i0.wp.com/www.adams.life/wp-content/uploads/2016/08/pair-programmers.jpg)
+
+---
+
+## Actions: Coding process
+
+<Horizontal>
+<div>
+    <span style={{ fontWeight: 'bold'}}>Pair programming</span><br/>
+    on demand, expert-novice/novice-novice/expert-expert,<br/>ping pong, mob programming
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Test</span>
+    <br/>
+Code coverage by unit-test and integration test to run locally​<br/>
+Automatic E2E test<br/>
+Automatic tools for static analysis of the code<br/>
+    <Notes>
+    - Build time
+    - Run time
+    - Plugin lint
+    - Code analysis by ide
+    </Notes>
+</div>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Standardization​</span>
+    <br/>
+    Definition of architectural and development guidelines​,<br/>common conventions and team rules
+</div>
+
+</Horizontal>
+
+---
+
+# Actions: People Management
+
+<Horizontal>
+
+<div>
+    <span style={{ fontWeight: 'bold'}}>Formation</span><br/>
+    - as a Team<br/>
+    - Study together by courses and books<br/>
+    - tech Friday, lunch & learn<br/>
+    - as a Single developer<br/>
+    - tech formation personal and/or team budget
+</div>
+<div>
+    <span style={{ fontWeight: 'bold'}}>Internal Meetings</span><br/>
+    - Team meeting and 121<br/>
+    - Goal: Monitoring the feeling of the team and of a person<br/>
+    - Performance check<br/>
+    - Yearly goals definition<br/>
+    - Salary review & Role review
+</div>
+
+</Horizontal>
+
+---
+
+## The End
