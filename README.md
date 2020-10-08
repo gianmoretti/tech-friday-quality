@@ -4,6 +4,10 @@
 
 `npm i`
 
+# How to build
+
+`npm run-script build`
+
 # How to run
 
-`npm start`
+`npm run-script start`
