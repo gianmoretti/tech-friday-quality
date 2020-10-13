@@ -98,17 +98,70 @@ Where we are
 ---
 
 # Metrics: Management process
+
+<div style={{ margin: "0", display: "flex" }}>
+  <div style={{ width: "30%", margin: "0 1%", textAlign: "center"}}>
+    <p>Defect density</p>
+    <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
+      Number of bugs as absolute number along the time
+      <br /><br />
+      ...better if scaled to the Number of story points
+      <br /><br />
+       ➡️ Look at the trend: if it increase maybe we're going too fast!!!
+      <br /><br />
+      Note: it's like the Coronavirus: the actions of Today will have effect in a couple of week...
+    </p>
+  </div>
+  <div style={{ width: "30%", margin: "0 1%", textAlign: "center" }}>
+    <p>Team reliability</p>
+    <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
+      Committment / Actual completion ratio
+      <br /><br />
+      Good or bad estimations
+      <br /><br />
+      Team affinity
+    </p>
+  </div>
+  <div style={{ width: "30%", margin: "0 1%", textAlign: "center" }}>
+    <p>Team Internal Organization</p>
+    <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
+      Sprint burndown report
+      <br /><br />
+      The long, difficult tasks first, and then the medium-sized tasks, and finally the smaller ones. 
+      <br /><br />
+      MoSCoW rule: "Must have, should have, could have, would have" 
+    </p>
+  </div>
+</div>
+
+
+*Tools*: standard JIRA reports with filters
+
+---
+
+Sprint burn down: in theory
+
+![sprint burn down](https://www.visual-paradigm.com/servlet/editor-content/scrum/scrum-burndown-chart/sites/7/2018/11/burndown-chart-and-emotion.png)
+
+---
+
+Sprint burn down: in the real world
+
+![Moscow Rule](https://printyourburndown.com/knowledge-base/burn-down-chart-examples-what-does-good-look-like/sprint-burn-down-example-too-horizontal.jpg)
+
+---
+
+# More in concrete: Transitions
+
 <ul>
-    <li>lead time: from TODO to DONE</li>
+    <li>Issue reopens vs Issue resolutions</li>
     <Steps>
-    <li>number of bugs ➡️ defect density ➡️ customer satisfaction</li>
-    <li>committment/actual completion ratio ➡️ team reliability</li>
-    <li>sprint burndown velocity ➡️ team internal organization</li>
-    <li>team velocity ➡️ team productivity</li>
+    <li>A declining re-open ratio shows work quality is improving</li> 
+    <li>...while a persistent upward trend shows low quality work</li>
     </Steps>
 </ul>
 
-*Tools*: JIRA reports
+*Tools*: JIRA reports (with specific plugins tracking the transition number)
 
 ---
 
@@ -164,6 +217,8 @@ Where we are
       Scrum, Kanban
       <br />
       Feature Sprints (for limiting as much as possible context switching)
+      <br />
+      Choose a Scrum Master
     </p>
   </div>
   <div style={{ width: "20%", margin: "0 1%" }}>
@@ -211,6 +266,12 @@ Where we are
     </p>
   </div>
 </div>
+
+---
+
+Scrum Master: 
+
+![scrum master knight](https://image.slidesharecdn.com/pecha-kucha-hard-life-scrummaster-161012173710/95/the-hard-life-of-a-scrum-master-scrum-day-portugal-2016-16-638.jpg)
 
 ---
 
@@ -287,7 +348,7 @@ Where we are
 ---
 
 ## Unit Test as the base of the Pyramid
-![Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid/testPyramid.png)
+![Test Pyramid](https://miro.medium.com/max/2444/1*Tcj3OsK8Kou7tCMQgeeCuw.png)
 
 ---
 
