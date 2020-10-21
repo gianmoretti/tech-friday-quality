@@ -103,23 +103,23 @@ Where we are
   <div style={{ width: "30%", margin: "0 1%", textAlign: "center"}}>
     <p>Defect density</p>
     <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
-      Number of bugs as absolute number along the time
+      Number of Bugs as absolute number along the time
       <br /><br />
-      ...better if scaled to the Number of story points
+      ...better if scaled to the Number of Story Points
       <br /><br />
        → Look at the trend: if it increase maybe we're going too fast!!!
       <br /><br />
-      Note: it's like the Coronavirus: the actions of "today" will have effect in a "couple of weeks"...
+      Note: it's like the Coronavirus: the actions of "today" will have effects in a "couple of weeks"...
     </p>
   </div>
   <div style={{ width: "30%", margin: "0 1%", textAlign: "center" }}>
-    <p>Team reliability</p>
+    <p>Team Reliability</p>
     <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
       Committment / Actual completion ratio
       <br /><br />
       Good or bad estimations
       <br /><br />
-      Team affinity
+      Team Velocity... but it's not a race<br />→ as the expression of Team Affinity
     </p>
   </div>
   <div style={{ width: "30%", margin: "0 1%", textAlign: "center" }}>
@@ -127,7 +127,7 @@ Where we are
     <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
       Sprint burndown report
       <br /><br />
-      The long, difficult tasks first, and then the medium-sized tasks, and finally the smaller ones. 
+      "The longest first, then the medium-sized tasks, and finally the smallest". 
       <br /><br />
       MoSCoW rule: "Must have, should have, could have, would have" 
     </p>
@@ -151,13 +151,17 @@ Sprint burn down: in the real world
 
 ---
 
-# More in concrete: Transitions
+# More advanced: Transitions
 
 <ul>
     <li>Issue reopens vs Issue resolutions</li>
     <Steps>
     <li>A declining re-open ratio shows work quality is improving</li> 
     <li>...while a persistent upward trend shows low quality work</li>
+    <li>→ reworking is bad because it means problems...</li> 
+    <li> - not only in the coding phase 🌩</li>
+    <li> - but also in the requirement definition 🌧</li>
+    <li> - and in general during the communication among the teams ⛈</li>
     </Steps>
 </ul>
 
@@ -168,7 +172,7 @@ Sprint burn down: in the real world
 # Metrics: Development process
 
 <ul>
-    <li>number of commits per day, team and/or developers 🤔 (mmm... rush? race-effect?)</li>
+    <li>number of commits per day, team and/or developers 🤔 (mmm... rush! ⚠️ race-effect ⚠️)</li>
     <Steps>
     <li>average commit size 😅</li>
     <li>average pull request size 😉</li>
@@ -177,6 +181,15 @@ Sprint burn down: in the real world
 </ul>
 
 *Tools*: GitHub APIs
+
+---
+
+# Example
+A few weeks ago, an issue related to the PR cycle was raised during the retrospective...
+<br />
+As an action → script for statistics collection
+
+https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
 
 ---
 
