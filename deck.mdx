@@ -1,6 +1,12 @@
 import { Box } from 'theme-ui'
-
 import { future, highlight } from '@mdx-deck/themes'
+import cynefin from "./images/cynefin.png";
+import agilemm from "./images/agile-mindmap.png";
+import feedbackcycle from "./images/feedback-cycle.png";
+import threer from "./images/3r.png";
+import people from "./images/people.png"
+import learning from "./images/learning.png"
+import functional from "./images/functional-programming.png"
 
 export const theme = {
   ...future,
@@ -9,7 +15,7 @@ export const theme = {
 
 # Quality in software development
 
-<Box color="yellow">by Eugenio and Gianluca @PatchAI</Box>
+<Box color="yellow">by Gianluca and Eugenio @PatchAI</Box>
 
 ---
 
@@ -94,6 +100,17 @@ Bad myths: *Productivity vs Quality*
 Where we are
 
 ![map](https://image.freepik.com/free-vector/navigation-map-street-3d-location-pin-locator-pins-pointer-navigator-maps-locations-marker_102902-1053.jpg)
+
+---
+
+<p style={{fontSize: "50px", color: "red", marginTop: "5px" }}>
+There is no "right thing"
+</p>
+<p style={{fontSize: "50px", color: "green", marginTop: "5px" }}>
+Only better things in context
+</p>
+
+Andy Hunt - inventor of The Pragmatic Programmer
 
 ---
 
@@ -244,19 +261,9 @@ https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
 
 <div style={{ margin: "0", display: "flex" }}>
   <div style={{ width: "20%", margin: "0 1%" }}>
-    <p>Pre-planning meetings</p>
+    <p>Constantly evaluted the style of management</p>
     <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
-      Whole team or team representative evaluate the stories
-      <br /><br />
-      Share responsibilities and decisions with Product team
-      <br /><br />
-      Exhaustive acceptance criteria
-    </p>
-  </div>
-  <div style={{ width: "20%", margin: "0 1%" }}>
-    <p>Agile improvemnt (even evaluating alternatives)</p>
-    <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
-      Scrum, Kanban, LeSS... and all the combinations!
+      Agile: Scrum, Kanban, LeSS... but it depends! See Cynefin
       <br /><br />
       Feature Sprints (for limiting as much as possible context switching)
       <br /><br />
@@ -278,7 +285,7 @@ https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
   <div style={{ width: "20%", margin: "0 1%" }}>
     <p>Brainstorming sessions for generating ideas and resolving problems</p>
     <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
-      Even storming sessions, Silent meetings, One-hour Brain Sprint, etc
+      Even storming sessions, Silent meetings, One-hour Brain Sprint, Co-Design etc
       <br /><br />
       Retrospectives and Post Mortem:<br />Find the most important emerged problems, understand the main causes and find the possible actions to take
       <br /><br />      
@@ -295,7 +302,39 @@ https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
       
     </p>
   </div>
+  <div style={{ width: "20%", margin: "0 1%" }}>
+    <p>Pre-Sprint-planning meetings</p>
+    <p style={{ fontSize: "20px", color: "#B6B6B6" }}>
+      Whole team or team representative evaluate the stories
+      <br /><br />
+      Share responsibilities and decisions with Product team
+      <br /><br />
+      Exhaustive acceptance criteria
+    </p>
+  </div>
 </div>
+
+---
+
+# The Cynefin Framework
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={cynefin}
+/>
+
+Link: https://en.wikipedia.org/wiki/Cynefin_framework
+
+---
+
+# Agile World
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={agilemm}
+/>
+
+Scrum with a JIRA Board doesn't mean "We are agile"
 
 ---
 
@@ -317,6 +356,8 @@ https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
 
 # Feedbacks: Sooner...
 
+(especially in a chaotic context)
+
 <ul>
     <li>"Primum vivere, deinde philosophare" - Orazio</li>
     <li>"Fake it until you make it" - English Aphorism</li>
@@ -335,6 +376,16 @@ https://github.com/PatchAii/newera_utility_scripts/tree/master/github_stats
 </ul>
 
 Nice video: https://www.youtube.com/watch?v=yc1fngch50w&feature=youtu.be&ab_channel=Avanscoperta
+
+---
+
+# Feedback cycle
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={feedbackcycle}
+/>
+
 
 ---
 
@@ -376,7 +427,7 @@ Nice video: https://www.youtube.com/watch?v=yc1fngch50w&feature=youtu.be&ab_chan
       <br /><br />
       Re-evaluate constantly if the choosen method is the right for our organization
       <br /><br />
-      User storis: when to accept → don't accept the ones not so well defined,<br /> or suggest improvement e.g. more specific acceptance criteria
+      User stories: when to accept → don't accept the ones not so well defined,<br /> or suggest improvement e.g. more specific acceptance criteria
     </p>
     <p style={{ marginBottom: "10px" }}>...and Code Review</p>
   </div>
@@ -523,6 +574,29 @@ https://www.youtube.com/watch?v=rR4n-0KYeKQ
 
 ---
 
+# Some rules:
+
+- Let's think about functional programming
+- Keep in mind: you can't predict, so let's do it extendible and maintainable!
+- Reusable? No! Replaceable
+
+---
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={functional}
+/>
+
+---
+
+# In summary...
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={threer}
+/>
+
+---
 # Actions: People Management
 
 <div style={{ margin: "0", display: "flex" }}>
@@ -555,6 +629,21 @@ https://www.youtube.com/watch?v=rR4n-0KYeKQ
     <p style={{ marginBottom: "10px" }}>Goal: coaching culture</p>
   </div>
 </div>
+
+---
+
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={learning}
+/>
+
+---
+
+<img
+  style={{ height: "600px", width: "auto" }}
+  src={people}
+/>
 
 ---
 
